@@ -1,0 +1,34 @@
+{
+    "name": "Form2",
+    "caption": "テストフォーム",
+    "width": 400,
+    "height": 300,
+    "root_widgets": ["Label1", "Button1"],
+    "widgets": {
+        "Label1": {
+            "id": "Label1",
+            "type": "Label",
+            "parent_id": "Form2",
+            "x": 20,
+            "y": 20,
+            "width": 0,
+            "height": 0,
+            "props": { "text": "Hello cpp_tk Designer!" },
+            "events": {},
+            "children": []
+        },
+        "Button1": {
+            "id": "Button1",
+            "type": "Button",
+            "parent_id": "Form2",
+            "x": 20,
+            "y": 50,
+            "width": 10,
+            "height": 10,
+            "props": { "text": "Click" },
+            "events": {},
+            "children": []
+        }
+    },
+    "id_counter": 3
+}
