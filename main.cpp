@@ -10,8 +10,12 @@
 
 int main(int argc, char** argv) 
 { 
-    tk::Tk app; app.withdraw(); // ルートは非表示 
-    Designer* designer = new Designer(&app); 
-    app.mainloop(); 
+    auto app        = new tk::Tk(); 
+    auto designer   = new Designer(app); 
+    designer->protocol("WM_DELETE_WINDOW", [&](){
+        app->quit();
+    });
+    app->withdraw(); 
+    app->mainloop(); 
     return 0;
 }
